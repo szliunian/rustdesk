@@ -100,16 +100,16 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const RENDEZVOUS_SERVERS: &[&str] = &["rustdesk01.graycoral.com"];
-pub const PUBLIC_RS_PUB_KEY: &str = "mAEnXExfKMsl9t2BV2zlhpb6tzCDJinPDiuSjOPKmns=";
+pub const RENDEZVOUS_SERVERS: &[&str] = &[" "];
+pub const PUBLIC_RS_PUB_KEY: &str = " ";
 
 pub const RS_PUB_KEY: &str = match option_env!("RS_PUB_KEY") {
     Some(key) if !key.is_empty() => key,
     _ => PUBLIC_RS_PUB_KEY,
 };
 
-pub const RENDEZVOUS_PORT: i32 = 39036;
-pub const RELAY_PORT: i32 = 39037;
+pub const RENDEZVOUS_PORT: i32 =  ;
+pub const RELAY_PORT: i32 =  ;
 
 macro_rules! serde_field_string {
     ($default_func:ident, $de_func:ident, $default_expr:expr) => {
